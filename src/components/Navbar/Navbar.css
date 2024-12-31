@@ -12,6 +12,7 @@
   
   .user-navbar__logo img{
     width: 50px;
+    /* filter: invert(1); */
     /* height: 100%; */
   }
   

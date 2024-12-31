@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/tickets" element={<TicketsPage />} />
+          <Route exact path="/" element={<TicketsPage />} />
           <Route exact path="/ticket/sell" element={
             <ProtectedRoute>
               <TicketForm />
