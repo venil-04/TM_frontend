@@ -1,0 +1,97 @@
+/* User Navbar Styles */
+.user-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+  }
+  
+  .user-navbar__logo img{
+    width: 50px;
+    /* height: 100%; */
+  }
+  
+  .user-navbar__links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .user-navbar__item {
+    position: relative;
+  }
+  
+  .user-navbar__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .user-navbar__link:hover {
+    color: #f39c12;
+  }
+
+  .user-navbar-logout:hover{
+    color: #f39c12;
+    cursor: pointer;
+  }
+  
+  .user-navbar__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-navbar__toggle-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-navbar__links--hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .user-navbar__links--active {
+    transform: translateY(0);
+    opacity: 1;
+    transition-duration: 1000;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: #444;
+    padding: 20px 30px;
+    z-index: 1000;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .user-navbar__links {
+      display: none;
+    }
+  
+    .user-navbar__toggle {
+      display: flex;
+    }
+  }
+  
