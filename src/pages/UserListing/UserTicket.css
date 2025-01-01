@@ -1,0 +1,97 @@
+/* UserTickets.css */
+
+.user-tickets-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .no-tickets {
+    text-align: center;
+    color: #888;
+  }
+  
+  .tickets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .user-ticket-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .user-ticket-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .user-ticket-card h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+  }
+  
+  .user-ticket-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .ticket-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    background-color: #a71d2a;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #555;
+    font-size: 1.2em;
+    margin-top: 50px;
+  }
+  
+  .error {
+    text-align: center;
+    color: red;
+    font-size: 1.2em;
+    margin-top: 50px;
+  }
+  

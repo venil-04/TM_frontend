@@ -42,14 +42,14 @@ console.log("auth context",authentication)
           </a>
         </li>
         <li className="user-navbar__item">
-           
+        
           <a href="/profile" className="user-navbar__link">
-            Profile 
+            Profile
           </a>
         </li>
         <li className="user-navbar__item">
-          <a href="#" className="user-navbar__link">
-            Support
+          <a href="/mylisting" className="user-navbar__link">
+            Your Listing
           </a>
         </li>
 

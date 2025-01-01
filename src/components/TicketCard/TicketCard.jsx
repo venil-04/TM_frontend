@@ -34,8 +34,8 @@ const TrainTicketCard = ({ ticket }) => {
         </div>
       </div>
       <div className="ticket-footer">
-        <p>Passenger: {ticket.userId.name} ({ticket.userId.email})</p>
-        <p className="id">Booking ID: {ticket._id}</p>
+        <p>Listed By: {ticket.userId.name} ({ticket.userId.phone})</p>
+        {/* <p className="id">B: {ticket._id}</p> */}
       </div>
     </div>
   );
